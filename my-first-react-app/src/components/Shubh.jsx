@@ -1,10 +1,9 @@
 // Shubh.jsx
 import React from 'react';
 
-const name1 = "Shubh";
-function Shubh({name, message}) {
+function Shubh(props) {
     return (
-        <h1>Hello {name1} and {name}. {message} </h1>
+        <h1>Hello {props.name}. {props.message}, your seat number is {props.seatNumber} </h1>
     );
 }
 
